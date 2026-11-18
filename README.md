@@ -27,14 +27,10 @@ A desktop has no motion sensor, so the app falls back to a **simulated sensor**:
 
 Phones expose motion sensors only to **HTTPS** pages, so the app must be served over HTTPS. GitHub Pages provides that for free.
 
-```bash
-git add -A
-git commit -m "WalkMode app, study kit and report draft"
-git remote add origin https://github.com/<your-user>/walkmode.git   # create the empty repo on GitHub first
-git push -u origin main
-```
+- Repository: <https://github.com/anhtienng/WalkMode-HCI>
+- Live app: **<https://anhtienng.github.io/WalkMode-HCI/>**
 
-On GitHub, go to **Settings → Pages → Build and deployment → Deploy from a branch → `main` / `(root)`**. After a minute the app is live at `https://<your-user>.github.io/walkmode/`.
+To publish, go to the repository's **Settings → Pages → Build and deployment → Deploy from a branch → `main` / `(root)` → Save**. The site goes live about a minute later. From then on, every `git push` to `main` redeploys it.
 
 On the study phone:
 1. Open that URL.
