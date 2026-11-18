@@ -1,0 +1,20 @@
+# Participant data must never be pushed to a public repo (GitHub Pages repos are public).
+data/*
+!data/README.md
+analysis/output/
+analysis/synthetic/
+__pycache__/
+*.pyc
+.venv/
+# LaTeX build products
+report/*.aux
+report/*.bbl
+report/*.blg
+report/*.log
+report/*.out
+report/*.fls
+report/*.fdb_latexmk
+report/*.synctex.gz
+report/acmart.cls
+report/ACM-Reference-Format.bst
+.DS_Store

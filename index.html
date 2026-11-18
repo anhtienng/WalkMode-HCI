@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en" data-mode="standard">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="description" content="WalkMode — a movement-aware mobile interface that enlarges touch targets while you walk.">
+  <title>WalkMode</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <div id="app">
+    <header class="appbar" data-chrome>
+      <a class="appbar-title" href="#/" data-chrome>WalkMode</a>
+      <div class="appbar-right" data-chrome>
+        <span id="mode-pill" class="mode-pill" hidden aria-live="polite">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="13" cy="4" r="2"/><path d="M10.5 8.5 8 21h2.2l1.6-7 2.2 2.1V21H16v-6.3l-2.2-2.1.7-3.3A6.5 6.5 0 0 0 19 12v-2a4.5 4.5 0 0 1-3.8-2.1l-1-1.6A2 2 0 0 0 12.5 5.5c-.3 0-.6.1-.9.2L7 7.6V12h2V8.9z"/></svg>
+          <span>Walking mode</span>
+        </span>
+        <span id="sensor-dot" class="sensor-dot" title="Sensor status"></span>
+      </div>
+    </header>
+    <main id="view" tabindex="-1"></main>
+  </div>
+  <noscript>WalkMode needs JavaScript.</noscript>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
